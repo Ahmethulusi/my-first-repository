@@ -17,7 +17,8 @@ def play():
                     print("_",end=" ")            
             print("")
             
-            guess = input(f"you have {lifeCount} life,Enter next guess ipucu({category})  :")
+            print(f"Clue (Bİr {category[:-3]})")
+            guess = input(f"you have {lifeCount} life,Enter next guess:")
             guessed.append(guess.lower())
             
             if len(guess) == len(word) and guess.isalpha():
